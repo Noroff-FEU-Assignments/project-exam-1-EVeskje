@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+   name="description"
+   content="Find inspiration and articles about several places around the world" />
+
+  <!-- Title -->
+  <title>Urban Traveller</title>
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+   href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&display=swap"
+   rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/styles.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="./assets/favicon.png" type="image/x-icon" />
+
+  <!-- Hotjar Tracking Code for Urban Traveller -->
+  <script src="./js/hotjar.js"></script>
+ </head>
+ <body>
+  <!-- Header -->
+  <header>
+   <nav class="navbar">
+    <a href="index.html" class="logo">
+     <img src="assets/urban-logo2.png" alt="Urban Traveller Logo" />
+    </a>
+    <ul class="nav-links">
+     <li><a href="index.html">Home</a></li>
+     <li><a href="articles.html">Articles</a></li>
+     <li><a href="about.html">About</a></li>
+     <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle">☰</button>
+   </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content" class="page-home grid">
+   <div class="hero">
+    <img
+     src="./assets/hero_background1.jpg"
+     alt="Hero Image"
+     class="hero-img" />
+    <div class="hero-content">
+     <h1>Urban Adventures Await</h1>
+     <p>Dive into the heart of our world with Urban Traveller</p>
+     <a href="articles.html"
+      ><button href="articles.html">Read More...</button></a
+     >
+    </div>
+   </div>
+
+   <!-- Carousel -->
+   <section class="carousel-container grid container">
+    <div class="header flex">
+     <h2>Latest post</h2>
+     <button
+      id="carousel-left"
+      class="icon icon--secondary control control--left">
+      <span class="visually-hidden">Slide left</span>
+     </button>
+     <button
+      id="carousel-right"
+      class="icon icon--secondary control control--right">
+      <span class="visually-hidden">Slide right</span>
+     </button>
+     <div class="dots flex">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+     </div>
+    </div>
+    <div class="loader"></div>
+    <ul id="carousel" class="carousel flex"></ul>
+   </section>
+
+   <!-- Featured -->
+   <div class="featured-section">
+    <div class="featured-content">
+     <h2>Discover Hidden Gems</h2>
+     <p>
+      Journey with us as we unveil the untouched corners of the world. From
+      bustling city streets to serene mountain peaks, we dive deep into the
+      heart of each destination, bringing you stories, insights, and travel tips
+      from our adventures. Explore the world through our lens and find
+      inspiration for your next great escape.
+     </p>
+     <a href="articles.html" class="featured-btn">Read Our Articles</a>
+    </div>
+    <img
+     src="./assets/featured-img.jpg"
+     alt="Featured Image"
+     class="featured-img" />
+   </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+   <ul class="social-icon">
+    <li class="social-icon__item">
+     <a class="social-icon__link" href="https://www.facebook.com">
+      <ion-icon name="logo-facebook"></ion-icon>
+     </a>
+    </li>
+    <li class="social-icon__item">
+     <a class="social-icon__link" href="https://www.twitter.com">
+      <ion-icon name="logo-twitter"></ion-icon>
+     </a>
+    </li>
+    <li class="social-icon__item">
+     <a class="social-icon__link" href="https://www.linkedin.com">
+      <ion-icon name="logo-linkedin"></ion-icon>
+     </a>
+    </li>
+    <li class="social-icon__item">
+     <a class="social-icon__link" href="https://www.instagram.com">
+      <ion-icon name="logo-instagram"></ion-icon>
+     </a>
+    </li>
+   </ul>
+   <ul class="menu">
+    <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+    <li class="menu__item">
+     <a class="menu__link" href="articles.html">Articles</a>
+    </li>
+    <li class="menu__item">
+     <a class="menu__link" href="about.html">About</a>
+    </li>
+    <li class="menu__item">
+     <a class="menu__link" href="contact.html">Contact</a>
+    </li>
+   </ul>
+   <p>&copy;2023 Urban Traveller | All Rights Reserved</p>
+  </footer>
+
+  <!-- Templates -->
+  <template id="template_carousel-card">
+   <li class="card card--small grid">
+    <div class="content flex flex--col">
+     <h3><a href="" class="ellipse-text"></a></h3>
+     <p class="ellipse-text"></p>
+    </div>
+    <div class="image">
+     <div class="category-item"></div>
+     <img src="" alt="" />
+    </div>
+   </li>
+  </template>
+
+  <!-- JavaScript -->
+  <script type="module" src="js/features/mobile-nav.js"></script>
+  <script type="module" src="./js/pages/index.js"></script>
+  <script
+   type="module"
+   src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script
+   nomodule
+   src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+ </body>
+</html>

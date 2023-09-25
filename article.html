@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Article | Urban Traveller</title>
+  <meta name="description" content="Article content" />
+
+  <!-- Styles and Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+   href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&display=swap"
+   rel="stylesheet" />
+  <link rel="stylesheet" href="./css/styles.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="./assets/favicon.png" type="image/x-icon" />
+
+  <!-- Hotjar Tracking Code for Urban Traveller -->
+  <script src="./js/hotjar.js"></script>
+ </head>
+ <body>
+  <!-- Header and Navigation -->
+  <header>
+   <nav class="navbar">
+    <a href="index.html" class="logo">
+     <img src="assets/urban-logo2.png" alt="Urban Traveller Logo" />
+    </a>
+    <ul class="nav-links">
+     <li><a href="index.html">Home</a></li>
+     <li><a href="articles.html">Articles</a></li>
+     <li><a href="about.html">About</a></li>
+     <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle">☰</button>
+   </nav>
+  </header>
+
+  <main id="main-content" class="page-article">
+   <!-- Loader -->
+   <div class="loader"></div>
+
+   <!-- Comments Section -->
+   <section id="comments-section" class="comments-section flow-content">
+    <div class="flex flex--wrap container">
+     <h2 class="text-600">Comments <span id="comment-count"></span></h2>
+     <a href="#comment-form" class="btn btn--primary">Write a comment</a>
+    </div>
+
+    <!-- Comments Container -->
+    <div id="comments-container" class="comments container">
+     <ul id="comments-ul" class="flex flex--col"></ul>
+     <div class="loader"></div>
+    </div>
+
+    <!-- Comment Form -->
+    <form
+     id="comment-form"
+     action="post"
+     class="comment-form flex flex--col container">
+     <h3 class="h2">Write a comment</h3>
+
+     <div class="form-group flow-content">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" autocomplete="name" />
+     </div>
+
+     <div class="form-group flow-content">
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" autocomplete="email" />
+     </div>
+
+     <div class="form-group flex flex--col">
+      <label for="comment">Comment</label>
+      <textarea name="comment" id="comment" autocomplete="off"></textarea>
+     </div>
+
+     <button class="btn btn--primary">Post</button>
+    </form>
+   </section>
+  </main>
+
+  <!-- Image Modal -->
+  <div id="img-modal" class="img-modal hidden grid" tabindex="-1">
+   <div class="container"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+   <ul class="social-icon">
+    <!-- Social Media Links -->
+    <li class="social-icon__item">
+     <a class="social-icon__link" href="https://www.facebook.com">
+      <ion-icon name="logo-facebook"></ion-icon>
+     </a>
+    </li>
+    <li class="social-icon__item">
+     <a class="social-icon__link" href="https://www.twitter.com">
+      <ion-icon name="logo-twitter"></ion-icon>
+     </a>
+    </li>
+    <li class="social-icon__item">
+     <a class="social-icon__link" href="https://www.linkedin.com">
+      <ion-icon name="logo-linkedin"></ion-icon>
+     </a>
+    </li>
+    <li class="social-icon__item">
+     <a class="social-icon__link" href="https://www.instagram.com">
+      <ion-icon name="logo-instagram"></ion-icon>
+     </a>
+    </li>
+   </ul>
+   <ul class="menu">
+    <!-- Navigation Links -->
+    <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+    <li class="menu__item">
+     <a class="menu__link" href="articles.html">Articles</a>
+    </li>
+    <li class="menu__item">
+     <a class="menu__link" href="about.html">About</a>
+    </li>
+    <li class="menu__item">
+     <a class="menu__link" href="contact.html">Contact</a>
+    </li>
+   </ul>
+   <p>&copy;2023 Urban Traveller | All Rights Reserved</p>
+  </footer>
+
+  <!-- Article and Comment Templates -->
+  <template id="template_article">
+   <article class="flow-content">
+    <header clasS="article-header flow-content">
+     <div class="image">
+      <img src="" alt="" />
+     </div>
+     <div class="flow-content container">
+      <span id="category" href="./articles.html" class="category-item"
+       >Travel</span
+      >
+      <h1></h1>
+     </div>
+    </header>
+    <div class="article-content flow-content container"></div>
+    <footer class="article-footer container text-350 text-light">
+     <div id="date"></div>
+    </footer>
+   </article>
+  </template>
+
+  <template id="template_comment">
+   <li class="comment flow-content">
+    <div class="header flex flex--wrap">
+     <h3></h3>
+     <span id="time" class="flex"></span>
+    </div>
+    <div id="content"></div>
+   </li>
+  </template>
+
+  <!-- JavaScript -->
+  <script type="module" src="js/features/mobile-nav.js"></script>
+  <script type="module" src="./js/pages/article.js"></script>
+  <script
+   type="module"
+   src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script
+   nomodule
+   src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+ </body>
+</html>
