@@ -1,5 +1,7 @@
 ## Urban Traveller
 
+[image](./assets/readme.png)
+
 ## Project Exam 1
 
 ## Goal
