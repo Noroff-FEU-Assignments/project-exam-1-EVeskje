@@ -46,7 +46,7 @@
  color: var(--clr-neutral-200);
  padding: 5px 10px;
  transition: background-color 0.4s;
- border-radius: 5px;
+ border-radius: var(--border-radius);
 }
 
 .nav-links li a:hover {
@@ -484,7 +484,7 @@ label,
  /* background-color: var(--clr-primary-600);
  color: white;
  cursor: pointer;
- border-radius: 5px;
+ border-radius: var(--border-radius);
  transition: background-color 0.3s; */
  background-image: linear-gradient(
   to right,
@@ -499,7 +499,7 @@ label,
  background-size: 230% auto;
  color: white;
  border: none;
- border-radius: 5px;
+ border-radius: var(--border-radius);
  cursor: pointer;
 }
 

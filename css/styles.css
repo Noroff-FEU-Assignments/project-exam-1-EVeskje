@@ -138,7 +138,7 @@ main {
  background-color: var(--clr-primary-600);
  color: white;
  cursor: pointer;
- border-radius: 5px;
+ border-radius: var(--border-radius);
  transition: background-color 0.3s;
  margin-top: 28px;
 }
@@ -196,7 +196,7 @@ main {
 .about-img {
  max-width: 40%;
  height: auto;
- border-radius: 10px;
+ border-radius: var(--border-radius);
 }
 
 /* 4.1 Media queries
