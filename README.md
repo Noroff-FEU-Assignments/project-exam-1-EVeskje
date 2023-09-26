@@ -1,6 +1,6 @@
 ## Urban Traveller
 
-[image](./assets/readme.png)
+![image](./assets/readme.png)
 
 ## Project Exam 1
 
