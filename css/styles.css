@@ -380,28 +380,6 @@ main {
  box-shadow: 0 0 0 5px var(--clr-primary-500);
 }
 
-.page-article figure,
-.page-article figure + *,
-h2,
-h3,
-h4,
-h5,
-h6 {
- --flow-space: var(--space-500);
-}
-
-.page-article figure {
- padding-top: calc((2 / 3) * 100%);
- width: 100%;
- position: relative;
-}
-
-.page-article figure img {
- position: absolute;
- top: 0;
- border-radius: var(--border-radius);
-}
-
 /* 7.2. Modal
 -------------------------*/
 .img-modal {

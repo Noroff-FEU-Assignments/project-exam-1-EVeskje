@@ -26,6 +26,7 @@
  --clr-neutral-400: #5d606b;
  --clr-neutral-500: #41434d;
  --clr-neutral-600: #001926;
+ --clr-neutral-600--opacity-90: #001926e6;
 
  --clr-error-350: #f0deda;
  --clr-error-400: #750a0a;
@@ -39,7 +40,7 @@
  /** 2. Base typography
 -------------------------*/
  --ff-base: "Outfit", arial, helvetica, sans-serif;
- --ff-accent: "Outfit", arial, serif;
+ --ff-accent: "Outfit", arial, helvetica, sans-serif;
 
  --fw-light: 300;
  --fw-regular: 400;
