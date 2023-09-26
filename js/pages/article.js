@@ -29,7 +29,7 @@ const {
  comment: commentInput,
 } = commentForm.elements;
 const articleId = new URLSearchParams(window.location.search).get("id");
-const submitButton = commentForm.querySelector(".btn");
+const submitButton = commentForm.querySelector(".button");
 const firstFormElem = commentForm.querySelector(":first-child");
 
 // Constants
@@ -258,7 +258,7 @@ const fetchComments = async () => {
   renderComments(response.data, commentListWrapper);
 
   if (commentAmount > 15) {
-   const button = createHTML("button", ["btn", "btn--primary"], "See more");
+   const button = createHTML("button", ["button", "button--primary"], "See more");
    button.addEventListener("click", loadComments);
    commentListWrapper.append(button);
   }

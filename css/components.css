@@ -70,6 +70,7 @@
   position: absolute;
   top: 60px;
   left: 0;
+  line-height: 1.8;
   background-color: var(--clr-primary-400);
  }
 
@@ -173,8 +174,7 @@ background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%); */
 
 /** 4. Button
 -------------------------*/
-
-.btn {
+.button {
  display: block;
  padding: var(--space-350) var(--space-500);
  font-size: var(--fs-450);
@@ -189,15 +189,15 @@ background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%); */
  transition: background-color 0.16s ease-in-out;
 }
 
-.btn:hover {
- background-color: var(--bg-btn-hover, var(--clr-neutral-500));
+.button:hover {
+ background-color: var(--bg-button-hover, var(--clr-neutral-500));
 }
 
-.btn:active {
- background-color: var(--bg-btn-active, var(--clr-neutral-400));
+.button:active {
+ background-color: var(--bg-button-active, var(--clr-neutral-400));
 }
 
-.btn:focus-visible {
+.button:focus-visible {
  outline: 2px solid var(--bg, var(--clr-neutral-200));
  box-shadow: 0 0 0 4px var(--focus-shadow, var(--clr-neutral-600));
 }

@@ -130,7 +130,7 @@ main {
  border-radius: 10px;
 }
 
-.featured-btn {
+.featured-button {
  padding: 10px 20px;
  font-size: 1em;
  border: none;
@@ -143,7 +143,7 @@ main {
  margin-top: 28px;
 }
 
-.featured-btn:hover {
+.featured-button:hover {
  background-color: #e7c7b0;
 }
 
@@ -303,12 +303,12 @@ main {
  margin-top: calc(var(--space-600) - var(--spacing));
 }
 
-.page-articles .btn {
+.page-articles .button {
  margin-inline: auto;
  margin-top: var(--space-900);
 }
 
-.page-articles .btn.hidden {
+.page-articles .button.hidden {
  display: none;
 }
 
@@ -426,7 +426,7 @@ main {
  margin-top: var(--space-600);
 }
 
-.comments-section > div .btn {
+.comments-section > div .button {
  flex-grow: 0;
  height: fit-content;
 }
@@ -435,7 +435,7 @@ main {
  gap: var(--space-600);
 }
 
-.comments .btn {
+.comments .button {
  margin-inline: auto;
  margin-top: var(--space-700);
 }
@@ -486,7 +486,7 @@ main {
  padding-top: var(--space-900);
 }
 
-.comment-form .btn {
+.comment-form .button {
  align-self: flex-start;
 }
 
