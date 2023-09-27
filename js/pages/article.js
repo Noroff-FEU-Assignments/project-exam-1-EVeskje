@@ -258,7 +258,11 @@ const fetchComments = async () => {
   renderComments(response.data, commentListWrapper);
 
   if (commentAmount > 15) {
-   const button = createHTML("button", ["button", "button--primary"], "See more");
+   const button = createHTML(
+    "button",
+    ["button", "button--primary"],
+    "See more"
+   );
    button.addEventListener("click", loadComments);
    commentListWrapper.append(button);
   }
