@@ -79,8 +79,7 @@
  --border-radius: 2px;
 }
 
-/** 5. Headings
--------------------------*/
+/* 5. Headings */
 h1,
 .h1,
 h2,
@@ -96,16 +95,15 @@ h2,
 .h2 {
  font-family: var(--ff-accent);
 }
+
 h1,
 .h1 {
  font-size: var(--fs-800);
 }
-
 h2,
 .h2 {
  font-size: var(--fs-550);
 }
-
 h3,
 .h3 {
  font-size: var(--fs-450);
@@ -145,17 +143,14 @@ h3,
 .text-light {
  font-weight: var(--fw-light);
 }
-
 .text-bold {
  font-weight: var(--fw-bold);
 }
 
-/** 8. Font families
--------------------------*/
+/* 8. Font families */
 .text-base {
  font-family: var(--ff-base);
 }
-
 .text-accent {
  font-family: var(--ff-accent);
 }
@@ -175,8 +170,7 @@ h3,
  }
 }
 
-/** 10. Layout
--------------------------*/
+/* 10. Layout */
 .flow-content > * + * {
  margin-top: var(--flow-space, var(--space-400));
 }
@@ -194,11 +188,9 @@ h3,
 .flex--col {
  flex-direction: column;
 }
-
 .flex--wrap {
  flex-wrap: wrap;
 }
-
 .flex--wrap > * {
  flex: 1 0 auto;
 }
