@@ -47,13 +47,11 @@ const validateInput = (inputType, value) => {
 };
 
 const displayValidationError = (inputElement, errorMessage, errorId) => {
- // Remove any existing error message with the same ID
  const existingError = document.getElementById(errorId);
  if (existingError) {
   existingError.remove();
  }
-
- // Create a new error message using renderAlertText
+ 
  const errorElement = renderAlertText("error", errorMessage, errorId);
  inputElement.parentNode.insertBefore(errorElement, inputElement.nextSibling);
 };
