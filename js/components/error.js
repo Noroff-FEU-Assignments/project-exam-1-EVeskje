@@ -1,20 +1,20 @@
 import { createHTML } from "../utilities/htmlUtilities.js";
 
 const createAlertElement = (alertType, message, id, typeClass) => {
-  const alert = createHTML("div", ["alert", alertType, typeClass, "flex"]);
-  
-  if (alertType === "error") {
-    const icon = createHTML("i", "ri-error-warning-line");
-    alert.append(icon);
-  }
+ const alert = createHTML("div", ["alert", alertType, typeClass, "flex"]);
 
-  const messageElem = createHTML("span", "message", message);
-  if (id) {
-    alert.setAttribute("id", id);
-  }
+ if (alertType === "error") {
+  alert.appendChild(createHTML("i", "ri-error-warning-line"));
+ }
 
-  alert.append(messageElem);
-  return alert;
+ const messageElem = createHTML("span", "message", message);
+ alert.appendChild(messageElem);
+
+ if (id) {
+  alert.id = id;
+ }
+
+ return alert;
 };
 
 /**
@@ -25,7 +25,7 @@ const createAlertElement = (alertType, message, id, typeClass) => {
  * @returns HTMLElement for text alerts
  */
 export const renderAlertText = (alertType, message, alertId) => {
-  return createAlertElement(alertType, message, alertId, "alert-type--text");
+ return createAlertElement(alertType, message, alertId, "alert-type--text");
 };
 
 /**
@@ -36,5 +36,5 @@ export const renderAlertText = (alertType, message, alertId) => {
  * @returns HTMLElement for dialog alerts
  */
 export const renderAlertDialog = (alertType = "alert", message, id) => {
-  return createAlertElement(alertType, message, id, "alert-type--dialog");
+ return createAlertElement(alertType, message, id, "alert-type--dialog");
 };
