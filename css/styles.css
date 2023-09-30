@@ -134,7 +134,7 @@ main {
  padding: 10px 20px;
  font-size: 1em;
  border: none;
- /* background-color: #d8a47f; */
+ /* background-color: var(--clr-primary-200); */
  background-color: var(--clr-primary-600);
  color: white;
  cursor: pointer;
