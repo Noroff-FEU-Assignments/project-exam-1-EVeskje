@@ -4,6 +4,7 @@
 
 ![image](./assets/readme.png)
 
+[See live site](https://urbantraveller.netlify.app/)
 
 ## Goal
 
