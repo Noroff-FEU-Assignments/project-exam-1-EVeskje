@@ -1,5 +1,5 @@
 import { fetchApi } from "../utilities/api.js";
-import { renderAlertDialog, renderAlertText } from "../components/error.js";
+import { renderAlertDialog, renderAlertText } from "../error.js";
 import {
  createHTML,
  decodeHTML,

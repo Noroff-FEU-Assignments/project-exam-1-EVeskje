@@ -1,4 +1,4 @@
-import { renderAlertText } from "../components/error.js";
+import { renderAlertText } from "../error.js";
 
 /**
 @param {String} value

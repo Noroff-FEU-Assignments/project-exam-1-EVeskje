@@ -1,6 +1,6 @@
 import { fetchApi } from "../utilities/api.js";
 import { createHTML, decodeHTML } from "../utilities/htmlUtilities.js";
-import { renderAlertDialog } from "../components/error.js";
+import { renderAlertDialog } from "../error.js";
 
 const categoryContainer = document.querySelector("#category-container");
 const categoryList = categoryContainer.querySelector("#category");

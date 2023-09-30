@@ -2,7 +2,7 @@ import {
  emailValidation,
  characterValidation,
 } from "../utilities/validation.js";
-import { renderAlertText } from "../components/error.js";
+import { renderAlertText } from "../error.js";
 
 const form = document.querySelector("form");
 const inputs = {
@@ -51,7 +51,7 @@ const displayValidationError = (inputElement, errorMessage, errorId) => {
  if (existingError) {
   existingError.remove();
  }
- 
+
  const errorElement = renderAlertText("error", errorMessage, errorId);
  inputElement.parentNode.insertBefore(errorElement, inputElement.nextSibling);
 };

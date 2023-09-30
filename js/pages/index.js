@@ -1,5 +1,5 @@
 import { fetchApi } from "../utilities/api.js";
-import { renderAlertDialog } from "../components/error.js";
+import { renderAlertDialog } from "../error.js";
 import { decodeHTML } from "../utilities/htmlUtilities.js";
 
 const carouselSection = document.querySelector(".carousel-container");
