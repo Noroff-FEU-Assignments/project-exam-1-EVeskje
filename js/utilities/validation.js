@@ -1,21 +1,19 @@
 import { renderAlertText } from "../components/error.js";
 
 /**
- * Checks if characters is equal to or more than amountOfChar
- * @param {String} value
- * @param {Number} [amountOfChar]
- * @returns Boolean
+@param {String} value
+@param {Number} [amountOfChar]
+@returns
  */
 export const characterValidation = (value, amountOfChar = 1) => {
  return value && value.length >= amountOfChar;
 };
 
 /**
- * Sets up error message for validation
- * @param {HTMLElement} input
- * @param {Boolean} validated
- * @param {String} errorId - unique id to get error element later
- * @param {String} errorMessage
+@param {HTMLElement} input
+@param {Boolean} validated
+@param {String} errorId
+@param {String} errorMessage
  */
 export const validationError = (input, validated, errorId, errorMessage) => {
  const errorElem = document.getElementById(errorId);
@@ -28,9 +26,8 @@ export const validationError = (input, validated, errorId, errorMessage) => {
 };
 
 /**
- * Validates the email based on regex pattern
- * @param {String} email
- * @returns Boolean
+@param {String} email
+@returns
  */
 export const emailValidation = (email) => {
  const pattern = /\S+@\S+\.\S+/;
@@ -38,12 +35,16 @@ export const emailValidation = (email) => {
 };
 
 /**
- * Sets up event listeners for the email input element.
- * @param {HTMLElement} emailInput
- * @param {String} id - unique id to get error element later
- * @param {String} errorMessage
+@param {HTMLElement} emailInput
+@param {String} id
+@param {String} errorMessage
  */
-export const setupEmailEventListener = (emailInput, id, errorMessage, formState = { isActive: false }) => {
+export const setupEmailEventListener = (
+ emailInput,
+ id,
+ errorMessage,
+ formState = { isActive: false }
+) => {
  let timer;
 
  const validateInput = () => {

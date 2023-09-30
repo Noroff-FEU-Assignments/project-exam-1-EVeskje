@@ -1,7 +1,6 @@
 /**
- * Returns string where html entities have been decoded.
- * @param {String} string
- * @returns String | null
+@param {String} string
+@returns
  */
 export const decodeHTML = (string) => {
  if (string) {
@@ -14,12 +13,11 @@ export const decodeHTML = (string) => {
 };
 
 /**
- * Creates an html element
- * @param {string} tag Html tag
- * @param {string | String[] | null} [classes]
- * @param {string | null} [text]
- * @param {object} [attributes] object containing attribute type as obj key and attribute value as obj value
- * @returns HTMLElement
+@param {string} tag
+@param {string | String[] | null} [classes]
+@param {string | null} [text]
+@param {object} [attributes]
+@returns
  */
 export const createHTML = (tag, classes, text, attributes) => {
  const elem = document.createElement(tag);
@@ -47,9 +45,8 @@ export const createHTML = (tag, classes, text, attributes) => {
 };
 
 /**
- * Parse html string through DOMParser and return the body element
- * @param {String} htmlString
- * @returns Body element
+@param {String} htmlString
+@returns
  */
 export const parseHTML = (htmlString) => {
  const parser = new DOMParser();
@@ -59,9 +56,8 @@ export const parseHTML = (htmlString) => {
 };
 
 /**
- * Appends an array of elements to parent
- * @param {Array} array - Array of HTMLElements
- * @param {HTMLElement} parent
+@param {Array} array
+@param {HTMLElement} parent
  */
 export const appendArray = (array, parent) => {
  for (const element of array) {
