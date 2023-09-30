@@ -470,11 +470,13 @@ label,
 .hero-content h1 {
  font-size: 2.5em;
  margin-bottom: 20px;
+ background: none;
 }
 
 .hero-content p {
  font-size: 1.2em;
  margin-bottom: 20px;
+ background: none;
 }
 
 .hero-content button {
