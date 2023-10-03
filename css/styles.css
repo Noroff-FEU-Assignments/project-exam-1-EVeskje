@@ -181,6 +181,7 @@ main {
 .about-content {
  flex: 1;
  padding-right: 50px;
+ max-width: 600px;
 }
 
 .about-content h2 {
@@ -190,6 +191,11 @@ main {
 
 .about-content p {
  font-size: 1.2em;
+}
+
+.about-btn {
+ margin-top: 20px;
+ width: fit-content;
 }
 
 .about-img {
